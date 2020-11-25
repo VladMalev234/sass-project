@@ -120,11 +120,13 @@ body {
   transition: 0.2s ease;
   -webkit-transform: translateY(-200%);
           transform: translateY(-200%);
+  opacity: 0;
 }
 
 .menu_active {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
+  opacity: 1;
 }
 
 .menu__nav {
@@ -217,8 +219,9 @@ body {
 }
 
 .hero {
-  background: #f1f1f1 url(../img/) no-repeat center top 80px/contain;
-  padding: 180px 0px 270px 0px;
+  background: #f1f1f1 url(../img/) no-repeat center top/cover;
+  padding: 120px 0px 270px 0px;
+  margin-top: 80px;
 }
 
 .hero__tittle {
@@ -236,8 +239,8 @@ body {
 
 @media (max-width: 991px) {
   .hero {
-    background-size: cover;
-    background-position: top left 30%;
+    background-size: 100%;
+    background-position: top right;
   }
 }
 /*# sourceMappingURL=style.css.map */
