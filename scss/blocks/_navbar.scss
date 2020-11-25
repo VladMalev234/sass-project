@@ -1,0 +1,98 @@
+//&- class в котором находимся
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #fff;
+
+   &-wrap {
+        display: flex;
+        //выравнивание элементов по вертикале по центру
+        align-items: center;
+        min-height: 80px;
+        justify-content: space-between;
+   }
+   // Настройка телефонов
+   &__mobile, &__landline {
+       text-align: right;
+   }
+   &__phone {
+       margin-bottom: 5px;
+       display: block;
+       font-size: 19px;
+       @include bold;
+       text-decoration: none;
+       color: $text-color;
+   }
+   &__small-text {
+        display: block;
+        font-size: 14px;
+        color: $text-color-light;
+        text-decoration: none;
+   }
+   
+}
+
+.menu {
+    width: 100%;
+    position: fixed;
+    //z-index: -1;
+    top: 80px;
+    left: 0;
+    padding: 16px 0px;
+    background: $primary;
+    color: #fff;
+    transition: 0.2s ease;
+    transform: translateY(-100%);
+    &_active {
+        transform: translateY(0%);
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &__link {
+        text-decoration: none;
+        font-size: 17px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+// настройка бургер кнопки
+    &-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+        border-right: 1px solid rgba(#510bba, 0.2);;
+        border-left: 1px solid rgba(#510bba, 0.2);
+        height: 80px;
+        width: 70px; 
+        &__line {
+            display: block;
+            width: 20px;
+            height: 3px;
+            background-color: #89a9eb;
+            margin: 2px 0;
+        } 
+    }
+}
+
+.logo {
+    &__text {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 18px;
+        text-transform: uppercase;
+        @include bold;
+    }
+
+    &__description {
+        display: block;
+        font-size: 14px;
+        color: $text-color-light;
+    }
+}

@@ -1,3 +1,18 @@
-*{
-    box-sizing: border-box;
-}
+//Настройка шрифтов
+@import 'fonts';
+
+// Базовые настройки сетки
+@import 'grid';
+
+// Цвета текста сайта
+@import 'colors';
+
+//Настройка интерфейса
+@import 'interface';
+
+// Шапка навигация сайта
+//import -деректива
+@import 'blocks/navbar';
+
+//header после навигации
+@import 'blocks/hero'
