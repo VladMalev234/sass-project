@@ -17,8 +17,14 @@
 //header после навигации
 @import 'blocks/hero';
 
-//offer после заголовка
+//offer после заголовка форма со стоимостью
 @import 'blocks/offer';
 
 //feature после offer
 @import 'blocks/features';
+
+//catalog после feature
+@import 'blocks/catalog';
+
+//blog-list после catalog
+@import 'blocks/blog-list';
