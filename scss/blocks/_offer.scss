@@ -90,3 +90,19 @@
         }
     }
 }
+
+@media (max-width: 400px) { 
+   .form {
+        &__row {
+            &-checkbox {
+                flex-direction: column;
+                //justify-content: center;
+                align-items: flex-start;
+            }
+        }
+        &__checkbox {
+            margin-bottom: 20px;
+        }
+   }
+    
+}
