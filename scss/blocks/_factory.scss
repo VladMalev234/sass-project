@@ -1,0 +1,29 @@
+.factory {
+    &-block {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        &__image {
+            margin: 20px 0;
+            & img {
+                width: 370px;
+                height: 269px;
+            }
+        }
+        &__text {
+            margin-left: 70px;
+            flex-basis: 50%;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .factory {
+        &-block {
+            &__text {
+                margin-left: 0;
+            }
+        }
+    }
+}

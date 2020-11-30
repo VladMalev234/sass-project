@@ -1,0 +1,41 @@
+.reviews {
+    background: $bg-secondary ;
+    &-slider {
+        display: flex;
+        justify-content: space-between;
+        //flex-wrap: wrap;
+        &__item {
+            text-align: center;
+        }
+        &__text {
+            position: relative;
+            font-size: 15px;
+            font-style: italic;
+            width: 370px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            &:after {
+                content: '';
+                position: absolute;
+                //z-index: 10;
+                bottom: -30px;
+                left: 50%;
+                //width: 20px;
+                height: 10px;
+                border: 10px solid transparent; 
+                border-top: 10px solid #fff;
+                transform: translateX(-50%);
+            }
+        }
+        &__image {
+            display: block;
+            width: 70px;
+            height: 70px;
+            border: 2px solid #6a99e9;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+    }
+}
