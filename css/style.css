@@ -905,4 +905,49 @@ input[type="checkbox"]:checked + label:before {
     margin-left: 0;
   }
 }
+
+.contacts {
+  background-color: #f6f7f9;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contacts-block__item {
+  text-align: center;
+}
+
+.contacts__image {
+  margin-bottom: 25px;
+  width: 30px;
+  height: 30px;
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: #262626;
+}
+
+.contacts__address {
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .contacts-block__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contacts-block__address {
+    max-width: 200px;
+    margin: auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */
