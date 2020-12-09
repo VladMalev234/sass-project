@@ -12,13 +12,22 @@
         max-width: 570px;
         position: relative;
         box-shadow: 7px 5px 21px rgba(0, 0, 0,.1);
+        overflow-y: hidden;
+        &:hover {
+            .catalog-card__buttons {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
         &__buttons {
             display: flex;
             @include bold;
-            //justify-content: none;
+            opacity: 0;
+            transition: 0.2s ease;
             position: absolute;
             bottom: 0px;
             right: 0;
+            transform: translateY(100%);
         }
         &__button {
             font-size: 11px;

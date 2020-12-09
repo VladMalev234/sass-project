@@ -7,6 +7,9 @@
 // Цвета текста сайта
 @import 'colors';
 
+// Slick slider
+@import 'slick';
+
 //Настройка интерфейса
 @import 'interface';
 
@@ -36,6 +39,9 @@
 @import 'blocks/steps';
 
 //steps после catalog
+@import 'blocks/before';
+
+//steps после catalog
 @import 'blocks/reviews';
 
 //steps после catalog
@@ -49,3 +55,4 @@
 
 //steps после catalog
 @import 'blocks/footer';
+
